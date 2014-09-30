@@ -1,0 +1,41 @@
+html
+    head
+        title Chatty Test
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css')
+        link(rel='stylesheet', href='/skin/css/epidermis.css')
+    body
+        section#login
+            .container
+                h1 Login / Register
+                form
+                    .form-group
+                        input(type='text', name='email', placeholder='name@help.com', required).form-control
+                    .form-group
+                        input(type='password', name='password', placeholder='password', required).form-control
+                    .form-group
+                        input(type='text', name='name', placeholder='Full Name', required).form-control
+                    .form-group
+                        input(type='submit').btn.btn-primary
+        section#dashboard
+            .container
+                h1 Dashboard
+                form#add-chat-window
+                    .form-group
+                        input(type='email', name='email', placeholder='recipient@help.com', required).form-control
+                    .form-group
+                        input(type='submit', value='Add Chat').btn.btn-primary
+        #templates
+            .chat-window
+                header
+                    b.email
+                article
+                    ul
+                footer
+                    form
+                        input(type='text', placeholder='What would you like to say?')
+                        input(type='submit')
+            li.chat-message-me.chat-message
+                p
+            li.chat-message-recipient.chat-message
+                p
+        script(src='/muscle/skeletal.bundle.js')

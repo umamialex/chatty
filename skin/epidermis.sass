@@ -1,0 +1,75 @@
+html, body
+    font-size: 16px
+
+body
+    margin: 5em 0
+    background: #ffffff
+    background: -moz-radial-gradient(center, ellipse cover,  #ffffff 0%, #e5e5e5 100%)
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5))
+    background: -webkit-radial-gradient(center, ellipse cover,  #ffffff 0%,#e5e5e5 100%)
+    background: -o-radial-gradient(center, ellipse cover,  #ffffff 0%,#e5e5e5 100%)
+    background: -ms-radial-gradient(center, ellipse cover,  #ffffff 0%,#e5e5e5 100%)
+    background: radial-gradient(ellipse at center,  #ffffff 0%,#e5e5e5 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=1 )
+
+section
+    display: none
+
+.chat-window
+    border: 1px solid #ccc
+    border-radius: 0.5em
+    box-shadow: 0 0 0.5em rgba(0,0,0,0.06)
+    background-color: #fff
+    display: inline-block
+    width: 20em
+    height: 30em
+    position: absolute
+    top: 10em
+    left: 10em
+    header
+        padding: 0em 1em
+        height: 3em
+        line-height: 3em
+    article
+        position: absolute
+        top: 3em
+        bottom: 3em
+        left: 0
+        right: 0
+        padding: 0 1em
+        ul
+            list-style-type: none
+            margin: 0
+            padding: 0
+    footer
+        position: absolute
+        bottom: 0
+        left: 0
+        right: 0
+        height: 3em
+        border-top: 1px solid #ccc
+        input[type='text']
+            line-height: 3em
+            height: 3em
+            padding: 0 1em
+            width: 100%
+            border-width: 0
+            background: transparent
+        input[type='submit']
+            height: 0
+            width: 0
+            visibility: hidden
+
+.chat-message
+    margin: 0.25em 0
+    p.unread
+        color: #f00
+
+.chat-message-recipient
+    text-align: right
+
+.chat-message-me
+    text-align: left
+
+#templates
+    display: none
